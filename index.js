@@ -18,10 +18,17 @@ app.get("/", function (req, res) {
 const personaCont = require("./src/controller/personaController.js");
 app.use("/api/persona",personaCont);
 
-/*
-const userCont = require("userController.js");
-app.use("/api/usuario",userCont);
-*/
+const cursoCont = require("./src/controller/cursoController.js");
+app.use("/api/curso",cursoCont);
+
+const usuarioCont = require("./src/controller/usuarioController.js");
+app.use("/api/usuario",usuarioCont);
+
+const materiaCont = require("./src/controller/materiaController.js");
+app.use("/api/materia",materiaCont);
+
+const sedeCont = require("./src/controller/sedeController.js");
+app.use("/api/sede",sedeCont);
 
 app.listen(config.server.port, function (err) {
     if (err) {

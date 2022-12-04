@@ -6,6 +6,6 @@
         "host": "localhost",
         "user": "root",
         "password": "1234",
-        "database": "alpha-silicon-01"
+        "database": "alpha-silicon"
     }
 }
